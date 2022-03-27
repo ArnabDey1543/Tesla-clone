@@ -1,16 +1,17 @@
 import React from 'react'
-import style from "styled-components"
+import styled from "styled-components"
+import Section  from "./Section";
 
 function Home() {
   return (
-    <container>
-        Home
-    </container>
+    <Container>
+        <Section />
+    </Container>
   )
 }
 
 export default Home
 
-const container = styled.div`
+const Container = styled.div`
     height: 100vh;
 `

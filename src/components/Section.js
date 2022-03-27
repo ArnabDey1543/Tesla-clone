@@ -1,9 +1,19 @@
 import React from 'react'
+import styled from "styled-components"
 
-function section() {
+function Section() {
   return (
-    <div>section</div>
+    <Wrap>Section</Wrap>
   )
 }
 
-export default section
+export default Section
+
+const Wrap = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background: oragne;
+    background-image: url('/images/model-s.jpg');
+
+
+`
