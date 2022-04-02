@@ -36,7 +36,7 @@ function Home() {
         rightBtnText="Existing Inventory"
       
       />
-      <section 
+      <Section 
         title= "Lowest Cost Panels in America"
         description= "Money-back gaurantee"
         backgroundImg="solar-panel.jpg"
