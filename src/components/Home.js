@@ -43,6 +43,12 @@ function Home() {
         leftBtnText="Order now"
         rightBtnText="Learn more"        
       />
+      <Section 
+        title= "Accessories"
+        description= ""
+        backgroundImg="accessories.jpg"
+        leftBtnText="Shop now"  
+      />
     </Container>
   )
 }
