@@ -36,6 +36,13 @@ function Home() {
         rightBtnText="Existing Inventory"
       
       />
+      <section 
+        title= "Lowest Cost Panels in America"
+        description= "Money-back gaurantee"
+        backgroundImg="solar-panel.jpg"
+        leftBtnText="Order now"
+        rightBtnText="Learn more"        
+      />
     </Container>
   )
 }
