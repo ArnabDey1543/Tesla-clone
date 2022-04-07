@@ -19,8 +19,20 @@ function Header() {
           <a href="#" >Shop</a>
           <a href="#" >Tesla Account</a>
           <CustomMenu />
-
         </RightMenu>
+        <BurgerNav>
+            <li><a href='#'>Existing Iventory</a></li>
+            <li><a href='#'>Used Inventory</a></li>
+            <li><a href='#'>Trade-in</a></li>
+            <li><a href='#'>Cybertruck</a></li>
+            <li><a href='#'>Roadster</a></li>
+            <li><a href='#'>Semi</a></li>
+            <li><a href='#'>Charging</a></li>
+            <li><a href='#'>Power</a></li>
+            <li><a href='#'>Utilities</a></li>
+            <li><a href='#'>Test Drive</a></li>
+        </BurgerNav>
+
     </Container>
   )
 }
@@ -38,7 +50,7 @@ const Container = styled.div`
   top: 0;
   left: 0;
   right: 0; //making the header full width
-
+  z-index: 1;
 `
 
 const Menu = styled.div`
@@ -74,4 +86,14 @@ const CustomMenu =styled(MenuIcon)`
   cursor : pointer;
 
 
+`
+
+const BurgerNav = styled.div`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 300px;
+  z-index: 16;
 `
