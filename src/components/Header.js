@@ -25,7 +25,7 @@ function Header() {
         <CustomMenu onClick = {() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
-        <CloseWrapper>
+        <CloseWrapper> 
           <CustomClose onClick = {() => setBurgerStatus(false)} />
         </CloseWrapper>
         <li>
@@ -123,7 +123,7 @@ const BurgerNav = styled.div`
   flex-direction: column;
   text-align: start;
 
-  transform: ${props => props.show ? 'translateX(0)': 'tanslateX(100%)'}; 
+  transform: ${props => props.show ? 'translateX(0)': 'tanslateX(100%)'};
 
   li {
     padding: 15px 0;
@@ -145,4 +145,4 @@ const CloseWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 
-`
+`;
