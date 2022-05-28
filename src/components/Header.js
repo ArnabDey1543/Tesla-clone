@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import { FlashAutoRounded } from "@material-ui/icons";
 
 function Header() {
-    const [burgerStatus, setBurgerStatus] = useState(false);
+    const [burgerStatus, setBurgerStatus] = useState(FlashAutoRounded);
 
 
 
@@ -24,7 +25,7 @@ function Header() {
         <a href="#">Tesla Account</a>
         <CustomMenu onClick = {() => setBurgerStatus(true)} />
       </RightMenu>
-      <BurgerNav show={burgerStatus}>
+      {/* <BurgerNav show={burgerStatus}>
         <CloseWrapper> 
           <CustomClose onClick = {() => setBurgerStatus(false)} />
         </CloseWrapper>
@@ -58,7 +59,8 @@ function Header() {
         <li>
           <a href="#">Test Drive</a>
         </li>
-      </BurgerNav>
+
+      </BurgerNav> */}
     </Container>
   );
 }
